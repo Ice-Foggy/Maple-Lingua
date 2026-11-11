@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Аватарка для Telegram</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 560px; height: 560px; box-sizing: border-box; background: #F2F4F7; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 36px; font-family: Manrope, sans-serif; color: #1B2A41">
+<div style="font-size: 22px; font-weight: 800">Как это выглядит в круглой аватарке</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+<svg width="128" height="128" viewBox="0 0 100 100" role="img" aria-label="Белый лист на красном круге"><circle cx="50" cy="50" r="50" fill="#C8332B"></circle><polygon transform="translate(20 22) scale(0.6)" fill="#FFFFFF" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon></svg>
+<div style="font-size: 14px; font-weight: 700; color: #5A6472">A · красный</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+<svg width="128" height="128" viewBox="0 0 100 100" role="img" aria-label="Облачко с листом на тёмно-синем круге"><circle cx="50" cy="50" r="50" fill="#1B2A41"></circle><g transform="translate(19 20) scale(0.28)"><path d="M50 10 H170 A40 40 0 0 1 210 50 V140 A40 40 0 0 1 170 180 H82 L40 212 L50 180 A40 40 0 0 1 10 140 V50 A40 40 0 0 1 50 10 Z" fill="#E5483E"></path><polygon transform="translate(55 42) scale(1.1)" fill="#FFFFFF" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon></g></svg>
+<div style="font-size: 14px; font-weight: 700; color: #5A6472">B · облачко</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+<svg width="128" height="128" viewBox="0 0 100 100" role="img" aria-label="Сине-красный лист на белом круге"><defs><clipPath id="av-l"><rect x="0" y="0" width="50" height="100"></rect></clipPath><clipPath id="av-r"><rect x="50" y="0" width="50" height="100"></rect></clipPath></defs><circle cx="50" cy="50" r="50" fill="#FFFFFF"></circle><g transform="translate(20 22) scale(0.6)"><polygon clip-path="url(#av-l)" fill="#1F4E9C" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon><polygon clip-path="url(#av-r)" fill="#C8332B" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon><line x1="50" y1="0" x2="50" y2="100" stroke="#FFFFFF" stroke-width="3"></line></g></svg>
+<div style="font-size: 14px; font-weight: 700; color: #5A6472">C · двуязычный</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: row; align-items: center; gap: 14px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px">
+<svg width="56" height="56" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#C8332B"></circle><polygon transform="translate(20 22) scale(0.6)" fill="#FFFFFF" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon></svg>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 18px; font-weight: 800">Maple Lingua</div>
+<div style="font-size: 14px; font-weight: 500; color: #5A6472">@maplelingua · французский и английский</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":560,"height":560}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

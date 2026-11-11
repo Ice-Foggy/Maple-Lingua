@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Двуязычный лист</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 560px; height: 560px; box-sizing: border-box; background: #F2F4F7; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; font-family: Manrope, sans-serif; color: #1B2A41">
+<div style="display: flex; flex-direction: row; align-items: center; gap: 24px">
+<svg width="150" height="150" viewBox="0 0 100 100" role="img" aria-label="Кленовый лист из синей и красной половин">
+<defs>
+<clipPath id="sl-left"><rect x="0" y="0" width="50" height="100"></rect></clipPath>
+<clipPath id="sl-right"><rect x="50" y="0" width="50" height="100"></rect></clipPath>
+</defs>
+<polygon clip-path="url(#sl-left)" fill="{{left}}" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon>
+<polygon clip-path="url(#sl-right)" fill="{{right}}" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon>
+<line x1="50" y1="0" x2="50" y2="100" stroke="#F2F4F7" stroke-width="2.5"></line>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 54px; font-weight: 800; line-height: 1; letter-spacing: 4px">MAPLE</div>
+<div style="font-size: 54px; font-weight: 800; line-height: 1; letter-spacing: 4px">LINGUA</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: row; align-items: center; gap: 16px; font-size: 15px; font-weight: 700; letter-spacing: 3px">
+<span style="color: #1F4E9C">FRANÇAIS</span>
+<span style="color: #8A93A0">|</span>
+<span style="color: #B02A23">ENGLISH</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"left":{"editor":"color","default":"#1F4E9C"},"right":{"editor":"color","default":"#C8332B"},"$preview":{"width":560,"height":560}}'>
+class Component extends DCLogic {
+renderVals() {
+return { left: this.props.left ?? '#1F4E9C', right: this.props.right ?? '#C8332B' };
+}
+}
+</script>
+</body>
+</html>

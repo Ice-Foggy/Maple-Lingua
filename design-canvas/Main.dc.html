@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Лист в облачке</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Manrope:wght@500;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1B2A41}a:hover{color:#C8332B}
+</style>
+</helmet>
+<div style="width: 560px; height: 560px; box-sizing: border-box; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; font-family: Manrope, sans-serif; color: #1B2A41">
+<svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Кленовый лист в облачке диалога">
+<path d="M50 10 H170 A40 40 0 0 1 210 50 V140 A40 40 0 0 1 170 180 H82 L40 212 L50 180 A40 40 0 0 1 10 140 V50 A40 40 0 0 1 50 10 Z" fill="{{accent}}"></path>
+<polygon transform="translate(55 42) scale(1.1)" fill="#FFFFFF" points="50,5 57,20 64,16 61,36 74,24 77,31 90,28 85,42 92,46 73,62 76,70 54,67 55,90 45,90 46,67 24,70 27,62 8,46 15,42 10,28 23,31 26,24 39,36 36,16 43,20"></polygon>
+</svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+<div style="font-family: 'DM Serif Display', serif; font-size: 60px; line-height: 1; letter-spacing: -0.5px">maple lingua</div>
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #5A6472">французский · английский</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C8332B","options":["#C8332B","#1F4E9C","#1B2A41","#2E7D5B"]},"$preview":{"width":560,"height":560}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#C8332B' };
+}
+}
+</script>
+</body>
+</html>
